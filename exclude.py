@@ -8,3 +8,5 @@ dataBank = h5py.File('dataBankRigel.h5','a')
 
 dataBank['x'].resize(dataBank['x'].shape[0] - 1, axis = 0)
 dataBank['y'].resize(dataBank['y'].shape[0] - 1, axis = 0)
+
+#teste
