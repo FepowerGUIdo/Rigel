@@ -1,3 +1,4 @@
+#use this code to remove any undesired value added to your data bank
 import numpy as np
 import h5py
 import serial
