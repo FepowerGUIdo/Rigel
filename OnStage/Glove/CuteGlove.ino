@@ -1,6 +1,11 @@
 //This is the code that we developed to read the values from the sensors and to make the RandomForest to answer what is the
 //gesture that is being done, there is also a section for bluetooth communication where we send what was the gesture to the
-//body teensy
+//body teensy.
+//Also, please pay attention to the pins that we are using, you will need to change them on the code in case you did not
+//use the same pins as us.
+//Moreover, remeber that for our glove we are using a Teensy 4.1, we strongly reccomend you to use the same microcontroller, as
+//the code really requires a lot of fast processment, plus, this board is small, which help a lot to make the desing smoother
+//Just a final reminder, whenever using a Teensy 4.1 pay a lot of attention on what you are doing, this boards are easy to burn
 
 
 //Includes the libraries we are usgin
