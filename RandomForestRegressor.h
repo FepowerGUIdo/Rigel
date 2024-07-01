@@ -1,3 +1,6 @@
+//This is our random forest regressor created with our data, we strongly recommend anyone willing to recreate
+//or use this project to take their own data, create the own databank and thus make their own random forest
+
 #pragma once
 #include <cstdarg>
 namespace Eloquent {
