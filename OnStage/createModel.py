@@ -1,3 +1,7 @@
+#This is a code to create the RandomForest from the data in the databank, as said in the RandomForest file, we strongly
+#recommend you to create and collect your own data as this will make your results more precise as they will be adapted to your
+#situation
+
 import numpy as np 
 import pandas as pd
 
@@ -9,14 +13,14 @@ from sklearn.metrics import accuracy_score
 
 from micromlgen import port
 
-def correlations(parametro):
-    paramateroPandas = pd.DataFrame(parametro)
-    corr = paramateroPandas.corr().fillna(0)
+def correlations(parameter):
+    parameterPandas = pd.DataFrame(parameter)
+    corr = parameterPandas.corr().fillna(0)
     tr_upper = np.triu(np.ones(corr.shape), k=1).astype('bool')
     return corr.where(tr_upper).stack().to_numpy()
 
-def media(parametro):
-    return np.mean(parametro,axis=0)
+def media(parameter):
+    return np.mean(parameter,axis=0)
 
 
 def createFeatures(dataset):
