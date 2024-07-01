@@ -7,5 +7,6 @@ import serial
 #defines our serial communication with the teensy, to get the values and use them to input into the data bank we will send to the AI
 dataBank = h5py.File('dataBankRigel.h5','a')
 
+#resizes the databank to itself minus 1
 dataBank['x'].resize(dataBank['x'].shape[0] - 1, axis = 0)
 dataBank['y'].resize(dataBank['y'].shape[0] - 1, axis = 0)
