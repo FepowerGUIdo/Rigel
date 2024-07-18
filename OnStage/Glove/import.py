@@ -7,7 +7,7 @@ import serial
 #defines our serial communication with the teensy, to get the values and use them to input into the data bank we will send to the AI
 dataBank = h5py.File('dataBankRigel.h5','a')
 ser = serial.Serial('COM13',timeout=1)
-ser.reset_input_buffer()
+ser.reset_input_buffer()#unecessary
 
 #creates a loop
 while(1):
